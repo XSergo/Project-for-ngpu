@@ -188,38 +188,114 @@ a:not([class]) {
 }
 
 .main__container {
+  height: 100vh;
   display: flex;
-  width: 803px;
-  height: 419px;
-  flex-direction: row;
+  flex-direction: column;
+  flex: 1 1 auto;
   align-items: center;
   justify-content: center;
-  /* padding: 0 66px 0 0; */
   gap: 55px;
   margin: 0 auto;
 }
 
+
+
+.footer {
+  background-image: url(/Images/img_content/фон\ 1.png);
+  height: 491px;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 69px 0 67px 0;
+}
+
+/* .footer__main_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__Quick_links  {
+  display: flex;
+  flex-direction: column;
+} */
+
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  text-align:start;
+  align-items: stretch;
+  margin: 0 46.5px;
+}
+
+
+
+.footer__about-test {
+  display: flex;
+  flex-direction: column;
+}
+.footer__about-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__about-second {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.ngpi_mail {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.yellow_text {
+  color: #FFC20E;
+  text-transform: uppercase;
+}
+
+/* 
 .img_yurait {
   width: 803px;
-  height: 185px;
+  height: 419px;
+  background-color: #FEFBFB;
   margin: 0 -15px;
+  border: 1px solid black;
 }
 
 .main__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   width: 400px;
   height: 185px;
-  background: #FEFBFB;
   padding: 0 15px;
+  justify-content: flex-start;
 }
 
 .main__content--container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-  margin: -28px 0;
+  margin: 28px 0;
 }
 
 .img_yurait_img {
@@ -228,7 +304,6 @@ a:not([class]) {
 }
 
 .main__img {
-  display: flex;
   width: 123px;
   height: 185px;
   display: flex;
@@ -283,6 +358,9 @@ a:not([class]) {
   color: #FEFBFB;
 }
 
-
-
-.underline {}
+.main__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
