@@ -205,11 +205,11 @@ body {
 
 .main {
   min-height: 100%;
+  width: 1920px;
   overflow: hidden;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-
 }
 
 .main__container {
@@ -402,15 +402,17 @@ body {
   flex-direction: column;
   background: #fff;
   max-width: 1920px;
-  align-items: flex-start;
   height: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .btn__wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin: 0 0 0 350px;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .seach_btn {
@@ -557,7 +559,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   max-width: 1920px;
-  margin: 0 auto;
   align-items: center;
   background: #fff;
 }
