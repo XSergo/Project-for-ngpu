@@ -51,15 +51,16 @@ a:not([class]) {
 html,
 body {
   height: 100%;
+
 }
 
-.wrapper {
+
+---------------------------------------------- .wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center
 }
-
----------------------------------------------- 
 
 .eye {
   width: 37px;
@@ -208,6 +209,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+
 }
 
 .main__container {
@@ -243,9 +245,7 @@ body {
   margin: 0 0 0 70px;
 }
 
-.main__content_img {
-
-}
+.main__content_img {}
 
 .main__content-text {
   display: flex;
@@ -270,7 +270,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
-  
+
 }
 
 .main__content--text-p {
@@ -343,12 +343,11 @@ body {
 .main__seach {
   max-width: 1920px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  height: 90px;
   gap: 55px;
-  margin: 0 auto;
-  
+  background: #FFFFFF;
+  justify-content: center;
 }
 
 .seach_container {
@@ -357,7 +356,7 @@ body {
   width: 1070px;
   height: 50px;
   border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   background: #FFC20E;
   margin: 0 0 10px 0;
 }
@@ -400,27 +399,243 @@ body {
 
 .btn__container {
   display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 1920px;
+  align-items: flex-start;
+  height: 40px;
+}
+
+.btn__wrapper {
+  display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
-  max-width: 400px;
-  margin: 0 6px 26px 300px;
 }
 
 .seach_btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-
-
+  align-items: center;
 }
 
 .btn_text {
-  
+  display: flex;
+  margin: 0 30px 0 0;
+}
+
+.seach_img {
+  margin: 0 7px 0 0;
 }
 
 
+.main__news {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1220px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
 
+.news__paragraf {
+  display: flex;
+  width: 1220px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.news__paragraf--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000043;
+  width: 180px;
+  height: 38px;
+  border-bottom: 3px solid #FFC20E;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 18px 0 45px 0;
+}
+
+.news__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1220px;
+  margin: 0 0 40px 0;
+}
+
+.main__news--cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__news--item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 282px;
+  margin: 0 30px 35px 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.news__img {
+  width: 282.25px;
+  height: 274px;
+  margin: 0 0 16px 0;
+  border: 1px solid;
+}
+
+.news__span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 20px 0 20px;
+}
+
+.news__text {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 0 20px 16px 20px;
+
+  color: #000000;
+
+}
+
+.main__news--items-anouther {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 282px;
+  margin: 0 0 35px 0;
+  border-radius: 10px;
+}
+
+.items__wrap {
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid;
+}
+
+.anouther__span {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+
+  margin: 30px 20px 0 20px;
+}
+
+.anouther__text {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #000000;
+  margin: 10px 20px 20px 20px;
+}
+
+.main__collaborator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+  background: #fff;
+}
+
+.collaborator__paragraf {
+  display: flex;
+  width: 1220px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.collaborator__paragraf--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000043;
+  width: 245px;
+  height: 38px;
+  border-bottom: 3px solid #FFC20E;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 40px 0;
+}
+
+.collaborator__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1220px;
+}
+
+.main__collaborator--cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__collaborator--item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 40px 25px 0;
+}
+
+.collaborator__img {
+  width: 164px;
+  height: 164px;
+  margin: 0px 55px 25px 0px;
+}
+
+.collaborator__h {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 8px 0 8px;
+}
+
+.collaborator__text {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 5px 8px 40px 8px;
+  color: #000000;
+}
 
 
 
@@ -435,7 +650,9 @@ body {
   font-family: 'Roboto';
   display: flex;
   flex-direction: row;
-  
+  justify-content: center;
+  max-width: 1920px;
+
 }
 
 .footer__container {
@@ -450,7 +667,6 @@ body {
 .footer__content {
   display: flex;
   justify-self: center;
-  
 }
 
 .footer__wrapper {
@@ -482,7 +698,7 @@ body {
 .second {
   display: flex;
   margin-left: 46.5px;
-  
+
 }
 
 .third {
@@ -493,7 +709,7 @@ body {
 .footer__about {
   display: flex;
   flex-direction: column;
-  text-align:start;
+  text-align: start;
   align-items: stretch;
   margin: 0 46.5px;
 }
