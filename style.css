@@ -4,13 +4,11 @@
   box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Убираем внешние отступы */
 body,
 h1,
 h2,
@@ -28,7 +26,7 @@ dd {
   margin: 0;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -37,13 +35,13 @@ body {
   background: rgba(239, 233, 233, 0.71);
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
 ul[class],
 ol[class] {
   list-style: none;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -55,7 +53,7 @@ body {
 }
 
 
----------------------------------------------- .wrapper {
+.wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -68,13 +66,9 @@ body {
   margin-right: 0 5px 0 0;
 }
 
-
-
 .header_img_bg {
   background-color: #6A6A6A;
 }
-
-
 
 .container {
   margin: 7px 0 30px 0;
@@ -88,9 +82,6 @@ body {
   align-items: flex-start;
 }
 
-
-
-
 .header__left {
   display: flex;
   align-self: center;
@@ -100,7 +91,7 @@ body {
 }
 
 .header__text {
-  /* margin: 7px 0 30px 0; */
+
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -108,9 +99,6 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-
-  /* justify-content: center;
-  flex-direction: row; */
 }
 
 .text_1 {
@@ -122,13 +110,13 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin: 0px 0 15px 0;
+  margin: 0px 0 25px 0;
   width: 462px;
   height: 25px;
 }
 
 .text_2 {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 20px;
   color: #000043;
@@ -213,7 +201,7 @@ body {
 }
 
 .main__container {
-  max-width: 1220px;
+  max-width: 1260px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -244,8 +232,6 @@ body {
   flex-direction: column;
   margin: 0 0 0 70px;
 }
-
-.main__content_img {}
 
 .main__content-text {
   display: flex;
@@ -291,7 +277,6 @@ body {
 }
 
 .main__text {
-  margin: 20px 0 0 0px;
   background-color: #1F1F59;
   color: #fff;
   border: 1px solid #000000;
@@ -554,6 +539,8 @@ body {
   margin: 10px 20px 20px 20px;
 }
 
+
+
 .main__collaborator {
   display: flex;
   flex-direction: column;
@@ -640,6 +627,141 @@ body {
 
 
 
+.answer-for-questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1920px;
+  align-items: center;
+}
+
+.answer-for-questions__paragraf {
+  display: flex;
+  width: 1220px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.answer-for-questions--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000043;
+  height: 38px;
+  border-bottom: 3px solid #FFC20E;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 45px 0 45px 0;
+  padding: 0 0 40px 0;
+}
+
+.answer-for-questions__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1220px;
+}
+
+.answer-for-questions__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-for-questions__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px 25px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.answer-for-questions__h {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 600;
+  width: 1220px;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 8px 0 0px;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFC20E;
+  padding: 0 0 10px 0;
+}
+
+.answer-for-questions__text {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 10px 8px 25px 0px;
+  color: #000000;
+}
+
+.answer-for-questions__text-0 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 10px 8px 4px 0px;
+  color: #000000;
+}
+
+.answer-for-questions__text-1 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 5px 8px 4px 8px;
+  color: #000000;
+}
+
+.answer-for-questions__item-anouther {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px 90px 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.answer-for-questions__text-2 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 10px 0px 4px 0px;
+  color: #000000;
+}
+
+.answer-for-questions__text-3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 0px 0px 0px 0px;
+  color: #000000;
+}
+
+.minus {
+  width: 20px;
+  height: 4px;
+  background-color: #000000;
+  margin: 0 25px 0 0;
+}
 
 
 
