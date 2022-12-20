@@ -415,8 +415,6 @@ input::-webkit-input-placeholder {
 }
 
 
-
-
 label {
   display: flex;
   align-items: center;
@@ -428,26 +426,18 @@ label {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
-  /* to contain absolute elements */
   padding: 0 30px 0 30px;
-  /* free space for custom radio button */
   cursor: pointer;
 }
 
-/* hide default radio button  */
 label input[type=radio] {
   position: absolute;
-  /* prevent taking any space */
-  /* cross-browser hidingg */
-  opactiy: 0;
   width: 0;
   height: 0;
 }
 
-/* custom radio button */
 label span {
   position: absolute;
-  /* position to the free space in <label> */
   top: 0;
   left: 0;
   width: 20px;
@@ -455,16 +445,13 @@ label span {
   background-color: #ddd;
   border-radius: 50%;
   transition: .3s background-color;
-  /* slight transition */
 }
 
-/* the check icon */
 label span:after {
   content: "";
   position: absolute;
   display: none;
 
-  /* middle */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -478,7 +465,6 @@ label:hover span {
   background-color: #ccc;
 }
 
-/**** Here's the trick ***/
 label input:checked~span {
   background-color: #1F1F59;
 }
@@ -486,18 +472,6 @@ label input:checked~span {
 label input:checked~span:after {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
