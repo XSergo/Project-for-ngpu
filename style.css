@@ -44,6 +44,7 @@ ol[class] {
 }
 
 
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -346,13 +347,7 @@ body {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   background: #FFC20E;
   margin: 0 0 10px 0;
-}
-
-.seach__input {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  outline: 0;
   padding: 0 0 0 10px;
   font-family: 'Roboto Condensed';
   font-style: normal;
@@ -362,6 +357,11 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1F1F59;
+}
+
+input::-webkit-input-placeholder {
+  color: #1F1F59;
+  font-family: 'Roboto Condensed';
 }
 
 .input_btn {
@@ -382,6 +382,11 @@ body {
   line-height: 19px;
   letter-spacing: 0.05em;
   margin: 0 0 10px -55px;
+  cursor: pointer;
+}
+
+.input_btn:hover {
+  background-color: #070758;
 }
 
 .btn__container {
@@ -409,14 +414,91 @@ body {
   align-items: center;
 }
 
-.btn_text {
+
+
+
+label {
   display: flex;
-  margin: 0 30px 0 0;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  /* to contain absolute elements */
+  padding: 0 30px 0 30px;
+  /* free space for custom radio button */
+  cursor: pointer;
 }
 
-.seach_img {
-  margin: 0 7px 0 0;
+/* hide default radio button  */
+label input[type=radio] {
+  position: absolute;
+  /* prevent taking any space */
+  /* cross-browser hidingg */
+  opactiy: 0;
+  width: 0;
+  height: 0;
 }
+
+/* custom radio button */
+label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: .3s background-color;
+  /* slight transition */
+}
+
+/* the check icon */
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  /* middle */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked~span {
+  background-color: #1F1F59;
+}
+
+label input:checked~span:after {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .main__news {

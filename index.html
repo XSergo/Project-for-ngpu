@@ -137,22 +137,23 @@
                 </div>
             </div>
             <div class="main__seach">
-                <div class="seach_container">
-                    <p class="seach__input" id="input">Поиск</p>
-                </div>
+                <input class="seach_container" placeholder="Поиск книг">
+                    
+                </input>
                 <button id="btn" class="input_btn">Найти</button>
             </div>
             <div class="btn__container">
                 <div class="btn__wrapper">
-
-                    <div class="seach_btn">
-                        <img class="seach_img" src="/Images/img_content/Ellipse 12.png" alt="">
-                        <p class="btn_text">в электронной библиотеке</p>
-                    </div>
-                    <div class="seach_btn">
-                        <img class="seach_img" src="/Images/img_content/Ellipse 12.png" alt="">
-                        <p class="btn_text">в каталоге НГПУ</p>
-                    </div>
+                    <form class="seach_btn" method="post">
+                          <label>в электронной библиотеке
+                            <input type="radio" name="fruit" checked/>
+                            <span></span>
+                          </label>
+                          <label>в каталоге НГПУ
+                            <input type="radio" name="fruit" checked/>
+                            <span></span>
+                          </label>
+                      </form>
                 </div>
             </div>
             
